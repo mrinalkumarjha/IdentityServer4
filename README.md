@@ -8,7 +8,8 @@ So we can have centralized login at one place for different application.
 
 Identity server also has ability to handle single sign on(SSO)
 
-Identity server can also manage API access control. 
+Identity server can also manage API access control. pictorial representation of identity server ![image](https://user-images.githubusercontent.com/3676282/128994368-041344f7-4b19-43b8-a984-054a850d81ed.png)
+
 
 # Some important terms.
   Users : who want to consume resources (ex: api endpoint)
