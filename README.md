@@ -1,2 +1,17 @@
 # IdentityServer4
 About identity server 4 in dotnet core.
+
+# What is identity server ?
+
+Identity server is framework built on top of oauth2 and openid connect. we can setup centralized authentication as service. different app like console , mobile app, webapp, webapi can use same authentication service. Identity server is open source.
+So we can have centralized login at one place for different application.
+
+Identity server also has ability to handle single sign on(SSO)
+
+Identity server can also manage API access control. 
+
+# Some important terms.
+  Users : who want to consume resources (ex: api endpoint)
+  Client: The medium which user will use to consume resources(API) .. ex: mobile client, laptops, pcs.
+  Resources: The api endpoint where actual secured data is stored.
+  
