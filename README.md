@@ -16,3 +16,13 @@ Identity server can also manage API access control. pictorial representation of 
   Client: The medium which user will use to consume resources(API) .. ex: mobile client, laptops, pcs.
   Resources: The api endpoint where actual secured data is stored.
   
+# Tools needed fot this course.
+  1> Dotnet core sdk 2.1 installed , Check version in commandprompt using dotnet --version
+  2> VS code or VS IDE
+  3> Chrome plugin: JSON Formatter, postman(this will act as a client)
+  
+# Steps to setup proj
+  > Open vs and create project with blank solution.
+  > Create webapi project by right clicking on solution > add new project > webapi core 2.1 proj 
+  > Create IdentityServer project (we can create identity project as seperate solution also)
+  
