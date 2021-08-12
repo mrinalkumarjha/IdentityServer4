@@ -170,7 +170,50 @@ Identity server can also manage API access control. pictorial representation of 
     }
 
 
-# 
+# Grant type:
+	In OAuth 2.0, the term “grant type” refers to the way an application gets an access token from identity server. ... 
+    Each grant type is optimized for a particular use case, whether that's a web app, a native app, 
+    a device without the ability to launch a web browser, or server-to-server applications.
+
+	grant type is a way by which clients(mobile, pc, browser, native mobile app) can communicate with resources.
+	
+    Here are some popular grant types:
+	
+	1> Client Credential: this can be used for server to server communication or trusted communication like intranet.
+        for ex if client(console app) want to 
+        access resource or api to api communication. this method should not be used for client (web application like browser) because it use clientid
+        and secret which browser can store it. so no user involve here.
+        we dont want to expose client credential to public.
+        for ex: in this app client console app want to access resources so we have used Client credential as grant type.
+
+    2> Resource owner password: resource owner can be a user. user will use browser or any client to access resource.
+        resource owner has capability of granting access to resources which is protected by identity server.
+        in this case client not only need to send client id to server but client would also send resource owner 
+        userid and pass.
+
+        in this case user is involved. this can be used if we know client is capable of storing user credential(trusted first party).
+        like spa, js, native app .
+
+    3> Authorization Code: situation when we need to give authentication using google or fb or any third party.
+        user involved, webapp server side, third party native app.
+        
+    4> Implicit: in this case client redirects user to identityserver login page, where user enter his id , pass
+        as soon as user login. identity server 4 will provide a consent page asking do u approve this client for making 
+        calls to resources. once consent is provided to client by user, access token is provided and by which browser 
+        would be able to access resources.
+        this is optimized for server side app, spa, user is involved here.
+
+    5> Hybrid: it is combination of implicit and authorization code. user is envolve here. can used for web app, spa, native app.
+            this is best choice .
+
+
+# Resource owner password flow added:
+    MainResourceOwnerAsync is method inside console app which has code to generate token with resource owner flow.
+
+# Implicit flow setup:
+
+
+
 
 
 

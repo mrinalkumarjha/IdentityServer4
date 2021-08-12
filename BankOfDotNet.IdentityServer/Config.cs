@@ -1,4 +1,5 @@
 ﻿using IdentityServer4.Models;
+using IdentityServer4.Test;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,26 @@ namespace BankOfDotNet.IdentityServer
 {
     public class Config
     {
+        public static List<TestUser> GetUsers()
+        {
+            return new List<TestUser>
+            {
+                new TestUser
+                {
+                    SubjectId = "1",
+                    Username = "mrinal",
+                    Password ="password"
+                },
+                new TestUser
+                {
+                    SubjectId = "2",
+                    Username = "karan",
+                    Password = "password"
+                }
+
+            };
+        }
+
         public static IEnumerable<ApiResource> GetApiResources()
         {
             return new List<ApiResource>
@@ -20,6 +41,7 @@ namespace BankOfDotNet.IdentityServer
         {
             return new List<Client>
             {
+                // ClientCredentials grant type based client for console app.
                 new Client
                 {
                     ClientId = "client",
@@ -29,8 +51,24 @@ namespace BankOfDotNet.IdentityServer
                         new Secret("secret".Sha256())
                     },
                     AllowedScopes = { "bankOfDotNetApi" }
+                },
+
+                // Resource owner password grant type client
+                new Client
+                {
+                    ClientId = "ro.client",
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    AllowedScopes = { "bankOfDotNetApi" }
                 }
+
             };
         }
+
+       
     }
 }
