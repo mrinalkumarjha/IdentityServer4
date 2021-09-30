@@ -16,6 +16,10 @@ namespace BankOfDotNet.ConsoleClient
             MainAsync().GetAwaiter().GetResult();
         }
 
+        /// <summary>
+        /// Client credential flow.
+        /// </summary>
+        /// <returns></returns>
         private static async Task MainAsync()
         {
             // discover all endpoint using metadata of identity server
@@ -80,6 +84,10 @@ namespace BankOfDotNet.ConsoleClient
 
         }
 
+        /// <summary>
+        /// Resource owner flow.
+        /// </summary>
+        /// <returns></returns>
         private static async Task MainResourceOwnerAsync()
         {
             // discover all endpoint using metadata of identity server

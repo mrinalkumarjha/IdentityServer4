@@ -212,9 +212,17 @@ Identity server can also manage API access control. pictorial representation of 
 
 # Implicit flow setup:
 
+    i have created seperate identity server project named (ImplicitFlow.IdentityServer)
+    for implicit flow. This is ui based identity server.
 
 
 
 
+
+# Implicit flow client app:
+
+    I have created seperate implicit flow mvc client app(BankofDotnet.MvcClient).
+
+    configure mvc client to use identityServer.
 
 

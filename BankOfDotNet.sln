@@ -3,11 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.API", "BankOfDotNet.API\BankOfDotNet.API.csproj", "{FD6D33FF-0EB0-4AD9-93A0-ED06FAE5E7B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankOfDotNet.API", "BankOfDotNet.API\BankOfDotNet.API.csproj", "{FD6D33FF-0EB0-4AD9-93A0-ED06FAE5E7B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.IdentityServer", "BankOfDotNet.IdentityServer\BankOfDotNet.IdentityServer.csproj", "{13C9B216-1F61-4DC0-860F-1456CF5A1BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankOfDotNet.IdentityServer", "BankOfDotNet.IdentityServer\BankOfDotNet.IdentityServer.csproj", "{13C9B216-1F61-4DC0-860F-1456CF5A1BEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.ConsoleClient", "BankOfDotNet.ConsoleClient\BankOfDotNet.ConsoleClient.csproj", "{6DF5201E-1E2C-44F6-ABCC-CA8BD3B4C9E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankOfDotNet.ConsoleClient", "BankOfDotNet.ConsoleClient\BankOfDotNet.ConsoleClient.csproj", "{6DF5201E-1E2C-44F6-ABCC-CA8BD3B4C9E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplicitFlow.IdentityServer", "ImplicitFlow.IdentityServer\ImplicitFlow.IdentityServer.csproj", "{7CF4F1AC-C9A1-48FB-A11C-02FE74FAD0BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E694A648-B46B-439D-BA88-71E5A2124DF0}"
+	ProjectSection(SolutionItems) = preProject
+		imageupload.txt = imageupload.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankOfDotNet.MvcClient", "BankOfDotNet.MvcClient\BankOfDotNet.MvcClient.csproj", "{239B319B-40BB-468E-84BC-C5F76617B45B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +36,14 @@ Global
 		{6DF5201E-1E2C-44F6-ABCC-CA8BD3B4C9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF5201E-1E2C-44F6-ABCC-CA8BD3B4C9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF5201E-1E2C-44F6-ABCC-CA8BD3B4C9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF4F1AC-C9A1-48FB-A11C-02FE74FAD0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF4F1AC-C9A1-48FB-A11C-02FE74FAD0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF4F1AC-C9A1-48FB-A11C-02FE74FAD0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF4F1AC-C9A1-48FB-A11C-02FE74FAD0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239B319B-40BB-468E-84BC-C5F76617B45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239B319B-40BB-468E-84BC-C5F76617B45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239B319B-40BB-468E-84BC-C5F76617B45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239B319B-40BB-468E-84BC-C5F76617B45B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
