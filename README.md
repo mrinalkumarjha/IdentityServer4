@@ -20,9 +20,22 @@ Identity server can also manage API access control. pictorial representation of 
   1> Dotnet core sdk 2.1 installed , Check version in commandprompt using dotnet --version
   2> VS code or VS IDE
   3> Chrome plugin: JSON Formatter, postman(this will act as a client)
+
+
+# What is oAuth2 ?
+	oauth2 is open authorization protocol used in data communication between application. It is RFC6749 industry standerd.
+	Here is oauth2 protocol abstract flow.
+
+
+
+# What is OpenID ?
+	openid is for authentication.
+
+
   
 # Steps to setup proj
   > Open vs and create project with blank solution.
   > Create webapi project by right clicking on solution > add new project > webapi core 2.1 proj 
   > Create IdentityServer project (we can create identity project as seperate solution also)
   
+
