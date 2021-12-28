@@ -60,6 +60,10 @@ Identity server can also manage API access control. pictorial representation of 
 	2> Implicit FLow -> "id_token" or "id_token token"
 	3> Hybrid Flow -> "Code id_token" or "code token" or "code id_token token".
 
+ # big picture
+ 	![image](https://user-images.githubusercontent.com/3676282/147559828-5998fb9f-792a-449a-85cd-9d56e1d95d16.png)
+
+  
   
 # Steps to setup proj
   > Open vs and create project with blank solution.
