@@ -26,6 +26,18 @@ Identity server can also manage API access control. pictorial representation of 
 	oauth2 is open authorization protocol used in data communication between application. It is RFC6749 industry standerd.
 	Here is oauth2 protocol abstract flow.
 
+	Client: client application  is application that access protected resources on behalf of resource owner. it could be web application, javascript application
+	mvc application and mobile application.
+	
+	Client application is classified as public and confidential.
+
+	Resource owner: this is the person  who owns data in system.
+
+	Authorization server: this gives access to token whithin then resource owner authority to authenticated client appllication. in short it manage authorization
+	and access.
+
+	Resource server: Resource server allow access to protected resource according to the authorization token ans scope.
+
 
 
 # What is OpenID ?
