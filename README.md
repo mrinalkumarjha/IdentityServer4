@@ -25,6 +25,9 @@ Identity server can also manage API access control. pictorial representation of 
 # What is oAuth2 ?
 	oauth2 is open authorization protocol used in data communication between application. It is RFC6749 industry standerd.
 	Here is oauth2 protocol abstract flow.
+	
+	![image](https://user-images.githubusercontent.com/3676282/147556963-7ac23db5-f13c-4e5d-bcb1-d5f8539ae764.png)
+
 
 	Client: client application  is application that access protected resources on behalf of resource owner. it could be web application, javascript application
 	mvc application and mobile application.
