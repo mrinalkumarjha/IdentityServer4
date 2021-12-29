@@ -145,6 +145,26 @@ Identity server can also manage API access control. pictorial representation of 
 
 
 	This will add ui to our existing identity server project.
+
+	Now register service in di to use ui which we added.
+
+		add this in di container... services.AddControllersWithViews();
+
+		and in middleware add this     app.UseStaticFiles();
+
+
+     Configure endpoint in middleware
+
+	  app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapDefaultControllerRoute();
+            });
+
+	  
+
+	Now if you run your project .. your identity server ui will appear .
+
+
 	
 
 
