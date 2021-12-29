@@ -126,3 +126,4 @@ C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.Iden
 C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\IdentityModel.dll

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "m7hCzKOjWAzZ4NWWOyTZ4N+Zfep800HofLOfH9SAFhK/vxII3iM+4x14WlIEKVg3AEt63mb52JQaAStIZ39w3g==",
+  "dgSpecHash": "ZmpttGUA8FN8CnYrpZQ/QEYJ5QC59JSdmSuwFjY7pJswp35ZNRl89SaxBGvewwRQuStU+ZZy93KxRsehbg8b+w==",
   "success": true,
   "projectFilePath": "C:\\Mrinal\\Learning\\IdentityServer4\\Movies.Client\\Movies.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mrinalkumar\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Mrinalkumar\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
     "C:\\Users\\Mrinalkumar\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.13\\microsoft.aspnetcore.authentication.openidconnect.5.0.13.nupkg.sha512",
     "C:\\Users\\Mrinalkumar\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Mrinalkumar\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
