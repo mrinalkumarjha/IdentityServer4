@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Net.Http.Headers;
 using Movies.Client.HttpHandlers;
+using IdentityModel.Client;
 
 namespace Movies.Client
 {
@@ -34,12 +35,40 @@ namespace Movies.Client
 
 
             // http operation.
+
+
+            // 1 create an HttpClient used for accessing the Movies.API
+
+            services.AddTransient<AuthenticationDelegatingHandler>();
             services.AddHttpClient("MovieAPIClient", client =>
             {
-                client.BaseAddress = new Uri("https://localhost:5010/"); // API GATEWAY URL
+                client.BaseAddress = new Uri("https://localhost:5001/"); // API GATEWAY URL
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
             }).AddHttpMessageHandler<AuthenticationDelegatingHandler>();
+
+            // 2 create an HttpClient used for accessing the IDP
+            services.AddHttpClient("IDPClient", client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:5005/");
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
+            });
+
+           // services.AddHttpContextAccessor();
+
+            services.AddSingleton(new ClientCredentialsTokenRequest
+            {
+                Address = "https://localhost:5005/connect/token",
+                ClientId = "movieClient",
+                ClientSecret = "secret",
+                Scope = "movieAPI"
+            });
+
+            // http operations
+
+
+
 
 
             services.AddAuthentication(options =>

@@ -214,7 +214,7 @@ Identity server can also manage API access control. pictorial representation of 
 
 
 
-# Important lecture 48:(https://www.udemy.com/course/secure-net-microservices-with-identityserver4-oauth2openid/learn/lecture/23231358#overview)
+# Important lecture 48, 54:(https://www.udemy.com/course/secure-net-microservices-with-identityserver4-oauth2openid/learn/lecture/23231358#overview)
 
 
 # Setting logout url after logout.
@@ -293,4 +293,67 @@ Identity server can also manage API access control. pictorial representation of 
 
     # 2nd method using IHttpClientFactory
 
-    For this we will use delegate handler . it will intercept our request and we will get token at one place.
+    For this we will use delegate handler . it will intercept our request and we will get token at one place. this is kind of interceptor same as in angular.
+
+
+        create httphandler to intercept and attach token.   added AuthenticationDelegatingHandler
+
+        register in startuo
+
+
+                
+
+            // http operation.
+
+
+            // 1 create an HttpClient used for accessing the Movies.API
+
+            services.AddTransient<AuthenticationDelegatingHandler>();
+            services.AddHttpClient("MovieAPIClient", client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:5001/"); // API GATEWAY URL
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
+            }).AddHttpMessageHandler<AuthenticationDelegatingHandler>();
+
+            // 2 create an HttpClient used for accessing the IDP
+            services.AddHttpClient("IDPClient", client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:5005/");
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
+            });
+
+           // services.AddHttpContextAccessor();
+
+            services.AddSingleton(new ClientCredentialsTokenRequest
+            {
+                Address = "https://localhost:5005/connect/token",
+                ClientId = "movieClient",
+                ClientSecret = "secret",
+                Scope = "movieAPI"
+            });
+
+            // http operations
+
+
+
+        inside service:
+
+
+          var httpClient = _httpClientFactory.CreateClient("MovieAPIClient");
+
+            var request = new HttpRequestMessage(
+                HttpMethod.Get,
+                "/movies");
+
+            var response = await httpClient.SendAsync(
+                request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
+
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+            var movieList = JsonConvert.DeserializeObject<List<Movie>>(content);
+            return movieList;
+
+
