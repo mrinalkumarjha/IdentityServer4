@@ -65,10 +65,11 @@ Identity server can also manage API access control. pictorial representation of 
 
   
   
-# Steps to setup proj
-  > Open vs and create project with blank solution.
-  > Create webapi project by right clicking on solution > add new project > webapi core 2.1 proj 
-  > Create IdentityServer project (we can create identity project as seperate solution also)
+# Create Identity server project
+	Create empty web app project and add nuget package to create identity server.
+
+	Install nuget package IdentityServer4
+
   
 
 
