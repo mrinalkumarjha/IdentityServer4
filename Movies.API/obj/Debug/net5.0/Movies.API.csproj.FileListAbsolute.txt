@@ -32,3 +32,10 @@ C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.EntityF
 C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

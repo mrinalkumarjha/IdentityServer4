@@ -93,3 +93,32 @@ Identity server can also manage API access control. pictorial representation of 
 
 
 
+# Protect api with identity server using jwt barrier token
+
+	For this we need to add nuget package(Microsoft.AspNetCore.Authentication.JwtBearer) in api project.
+
+
+	Now after this register jwt package in di container to activate it.
+	added following in web api startup 
+	   services.AddAuthentication("Bearer")
+                .AddJwtBearer("Bearer", options =>
+                {
+                    options.Authority = "https://localhost:5005";
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                    {
+                        ValidateAudience = false
+                    };
+                });
+
+
+    
+	Now we need a valid token to use movie api
+
+
+# Clai based Authentication with client id claim restriction.
+
+
+
+
+
+
