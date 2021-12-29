@@ -21,3 +21,15 @@ C:\Mrinal\Learning\IdentityServer4\IdentityServer\obj\Debug\net5.0\IdentityServe
 C:\Mrinal\Learning\IdentityServer4\IdentityServer\obj\Debug\net5.0\ref\IdentityServer.dll
 C:\Mrinal\Learning\IdentityServer4\IdentityServer\obj\Debug\net5.0\IdentityServer.pdb
 C:\Mrinal\Learning\IdentityServer4\IdentityServer\obj\Debug\net5.0\IdentityServer.genruntimeconfig.cache
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\IdentityModel.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\IdentityServer4.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\IdentityServer4.Storage.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Mrinal\Learning\IdentityServer4\IdentityServer\obj\Debug\net5.0\IdentityServer.csproj.CopyComplete

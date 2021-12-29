@@ -70,6 +70,26 @@ Identity server can also manage API access control. pictorial representation of 
 
 	Install nuget package IdentityServer4
 
+	Add services.AddIdentityServer(); and  app.UseIdentityServer(); inside startup class.
+
+	Now need to configure client , scopes , resource and test user.
+
+	added following code to add client scope ...
+
+	  services.AddIdentityServer()
+                .AddInMemoryClients(new List<Client>())
+                .AddInMemoryApiScopes(new List<ApiScope>())
+                .AddInMemoryIdentityResources(new List<IdentityResource>())
+                .AddTestUsers(new List<TestUser>())
+                .AddDeveloperSigningCredential();
+
+
+
+
   
+	Once project runs properly you should able to browse discovery document at follwing url
+
+	https://localhost:5005/.well-known/openid-configuration
+
 
 
