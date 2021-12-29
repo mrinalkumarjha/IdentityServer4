@@ -214,7 +214,21 @@ Identity server can also manage API access control. pictorial representation of 
 
 
 
+# Important lecture 48:(https://www.udemy.com/course/secure-net-microservices-with-identityserver4-oauth2openid/learn/lecture/23231358#overview)
 
+
+# Setting logout url after logout.
+	If we dont add following code for client object after logout app wont redirect back to client site.
+	                       //PostLogoutRedirectUris = new List<string>()
+                       //{
+                       //    "https://localhost:5002/signout-callback-oidc"
+                       //},
+
+
+     now code to logout automatically to client url.
+	 inside quickstart > account > accountoptions.cs set following code.
+
+	  public static bool AutomaticRedirectAfterSignOut = true;
 		
 
 

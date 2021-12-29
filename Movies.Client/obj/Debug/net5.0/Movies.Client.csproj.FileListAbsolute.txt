@@ -119,3 +119,10 @@ C:\Mrinal\Learning\IdentityServer4\Movies.Client\obj\Debug\net5.0\Razor\Views\Mo
 C:\Mrinal\Learning\IdentityServer4\Movies.Client\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
 C:\Mrinal\Learning\IdentityServer4\Movies.Client\obj\Debug\net5.0\Razor\Views\Movies\Edit.cshtml.g.cs
 C:\Mrinal\Learning\IdentityServer4\Movies.Client\obj\Debug\net5.0\Razor\Views\Movies\Index.cshtml.g.cs
+C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Mrinal\Learning\IdentityServer4\Movies.Client\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
