@@ -130,8 +130,22 @@ Identity server can also manage API access control. pictorial representation of 
 
 # Creating mvc client app who will consume api
 
+	created Movies.Client as client app in solution
 
 
+# Create ui in identity server so that client can login
+	For this purpose we will use identity server quick start template.
+	goto gitgub idendity  server quickstart project  (https://github.com/IdentityServer/IdentityServer4.Quickstart.UI)
+
+	open existing identity server project in terminal to run power shell script.
+
+	run following command
+
+	iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/IdentityServer/IdentityServer4.Quickstart.UI/main/getmain.ps1'))
+
+
+	This will add ui to our existing identity server project.
+	
 
 
 
