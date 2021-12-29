@@ -13,6 +13,7 @@ namespace IdentityServer
         public static IEnumerable<Client> Clients =>
             new Client[]
             {
+                // this client is for api project
                    new Client
                    {
                         ClientId = "movieClient",
@@ -23,11 +24,13 @@ namespace IdentityServer
                         },
                         AllowedScopes = { "movieAPI" }
                    },
+                   // this client is for mvc client project
                    new Client
                    {
+                       // client id must be unique. this client id is used in openid configuration of client application.
                        ClientId = "movies_mvc_client",
                        ClientName = "Movies MVC Web App",
-                       AllowedGrantTypes = GrantTypes.Hybrid,
+                       AllowedGrantTypes = GrantTypes.Code,// this is the type by which we get the token
                        RequirePkce = false,
                        AllowRememberConsent = false,
                        RedirectUris = new List<string>()
@@ -85,12 +88,12 @@ namespace IdentityServer
                 new TestUser
                 {
                     SubjectId = "5BE86359-073C-434B-AD2D-A3932222DABE",
-                    Username = "mehmet",
-                    Password = "swn",
+                    Username = "mrinal",
+                    Password = "mrinal",
                     Claims = new List<Claim>
                     {
-                        new Claim(JwtClaimTypes.GivenName, "mehmet"),
-                        new Claim(JwtClaimTypes.FamilyName, "ozkaya")
+                        new Claim(JwtClaimTypes.GivenName, "mrinal"),
+                        new Claim(JwtClaimTypes.FamilyName, "jha")
                     }
                 }
             };
