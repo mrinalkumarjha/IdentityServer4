@@ -41,6 +41,12 @@ namespace Movies.API
                     };
                 });
 
+            // claim based authorization
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("ClientIdPolicy", policy => policy.RequireClaim("client_id", "movieClient"));
+            });
+
             services.AddDbContext<MoviesContext>(options =>
                     options.UseInMemoryDatabase("Movies"));
 

@@ -115,9 +115,20 @@ Identity server can also manage API access control. pictorial representation of 
 	Now we need a valid token to use movie api
 
 
-# Clai based Authentication with client id claim restriction.
+# Claim based Authentication with client id claim restriction.
+	created seperate identitycontroller to get claims.
+
+	added claim based authentication. need to look more on this
+
+	
+            // claim based authentication
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("ClientIdPolicy", policy => policy.RequireClaim("client_id", "movieClient"));
+            });
 
 
+# 
 
 
 
