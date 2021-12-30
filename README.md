@@ -374,3 +374,7 @@ Identity server can also manage API access control. pictorial representation of 
 # Claim based authorization in IS4.
 
     claims based authorization checks claim and based on claim authorize user.
+
+# Create role claim to use role based authorization.
+    by ading this we can customize our application based on different roles.
+
