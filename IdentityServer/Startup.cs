@@ -1,5 +1,6 @@
 using IdentityServer4.Models;
 using IdentityServer4.Test;
+using IdentityServerHost.Quickstart.UI;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -25,7 +26,8 @@ namespace IdentityServer
                  .AddInMemoryApiScopes(Config.ApiScopes)
                  .AddInMemoryIdentityResources(Config.IdentityResources)
                  //.AddInMemoryApiResources(Config.ApiResources)
-                 .AddTestUsers(Config.TestUsers)
+                 //.AddTestUsers(Config.TestUsers)
+                   .AddTestUsers(TestUsers.Users)
                  .AddDeveloperSigningCredential();
         }
 

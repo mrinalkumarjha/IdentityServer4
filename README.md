@@ -369,3 +369,8 @@ Identity server can also manage API access control. pictorial representation of 
     in hybrid flow we will get token at the time of login itself. for this we use IHttpContextAccessor
 
     for hybrid flow we add services.AddHttpContextAccessor();
+
+
+# Claim based authorization in IS4.
+
+    claims based authorization checks claim and based on claim authorize user.
