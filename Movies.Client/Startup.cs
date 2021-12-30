@@ -55,15 +55,15 @@ namespace Movies.Client
                 client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
             });
 
-           // services.AddHttpContextAccessor();
+            services.AddHttpContextAccessor(); // for hybrid flow  .. here we say that we want to use existing request and dont want to make new req for token.
 
-            services.AddSingleton(new ClientCredentialsTokenRequest
-            {
-                Address = "https://localhost:5005/connect/token",
-                ClientId = "movieClient",
-                ClientSecret = "secret",
-                Scope = "movieAPI"
-            });
+            //services.AddSingleton(new ClientCredentialsTokenRequest
+            //{
+            //    Address = "https://localhost:5005/connect/token",
+            //    ClientId = "movieClient",
+            //    ClientSecret = "secret",
+            //    Scope = "movieAPI"
+            //});
 
             // http operations
 
@@ -83,7 +83,7 @@ namespace Movies.Client
 
                     options.ClientId = "movies_mvc_client";
                     options.ClientSecret = "secret";
-                    options.ResponseType = "code";
+                    options.ResponseType = "code id_token";
 
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");

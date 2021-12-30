@@ -30,7 +30,7 @@ namespace IdentityServer
                        // client id must be unique. this client id is used in openid configuration of client application.
                        ClientId = "movies_mvc_client",
                        ClientName = "Movies MVC Web App",
-                       AllowedGrantTypes = GrantTypes.Code,// this is the type by which we get the token
+                       AllowedGrantTypes = GrantTypes.Hybrid,// this is the type by which we get the token
                        RequirePkce = false,
                        AllowRememberConsent = false,
                        RedirectUris = new List<string>()

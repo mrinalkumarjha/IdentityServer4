@@ -357,3 +357,15 @@ Identity server can also manage API access control. pictorial representation of 
             return movieList;
 
 
+
+
+# OIDC authentication flow. LEC-56
+    1> Authorization code flow. > code
+    2> implicit flow > "id_token" or id_token token
+    3> Hybrid flow. > code , "id_token" or code token or "code id_token token"
+
+    We need to update responsetype in client application to code id_token to use hybrid flow.
+
+    in hybrid flow we will get token at the time of login itself. for this we use IHttpContextAccessor
+
+    for hybrid flow we add services.AddHttpContextAccessor();
